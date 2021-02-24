@@ -83,3 +83,101 @@ elsif country == "us"then puts "Hello"
 elsif country == "Italy"then puts "ciao"
 else puts "???"
 end
+
+# 2-6
+def add(a,b)
+  puts a * b
+end
+
+puts add(5,3)
+
+def hello_world 
+ puts "Hello,world!"
+end
+ 
+def helloworld
+ puts "Hellow,world!"
+end
+
+def hello_world_2
+ puts "Hellow,world!"
+end
+
+# 定義の頭に数字は使用不可（エラー対象）
+# def 2_hello_world
+#  puts "Hellow,world!"
+# end
+
+# 2-7 fizz_buzz作成
+
+# 2-8
+puts 'add'.class
+
+puts %q!He said, "Don't speak."!
+
+
+puts "Line 1,
+Line2 "
+
+# a = <<TEXT
+#  これはヒアドキュメントです。
+#  複数業渡る長い文字列を作成するのに便利です。
+# TEXT
+
+# puts a
+
+
+# def some_method
+#     <<-TEXT
+#     これはヒアドキュメントです。
+#     <<-を使うと最後の識別子をインデントさせることができます。
+#     TEXT
+# end
+
+# def some_method
+#   <<~TEXT
+#   これはヒアドキュメントです。
+#   <<~を使うと内部文字列のインデント部分が無視されます。
+#   TEXT
+# end
+
+# puts some_method
+
+# name = "Aloce"
+# a = <<TEXT
+# ようこそ、#{name}さん！
+# 以下のメッセージをご覧ください。
+# TEXT
+# puts a 
+
+a = "Ruby"
+a.prepend(<<TEXT)
+Java 
+PHP
+TEXT
+puts a
+
+b = <<TEXT.upcase
+Hello,
+Good-bye.
+TEXT
+puts b
+
+puts sprintf('%0.3f', 1.2)
+puts '%0.3f'%1.2
+
+puts "\u3042\u3044\u3046"
+
+# 2-10
+
+def greeting(country)
+ country or return 'countryを入力してください'
+ if country == 'japan'
+  'こんにちは'
+ else 
+  'Hello'
+ end
+end
+
+puts greeting(nil)
+puts greeting('japan')

@@ -263,12 +263,16 @@
 # puts c
 # puts a
 
-require "date"
-puts Date.today
+# require "date"
+# puts Date.today
 
-require"./cp1"
-puts a
+# require"./cp1"
+# puts a
 
-require"./cp1"
-puts a
+# require"./cp1"
+# puts a
 
+
+# assert_equal b, a
+# assert a
+# refute a
